@@ -9,10 +9,16 @@
         <link rel="icon" href="fav2.ico?v=2" type="image/x-icon" />
     </head>
     <body>
-        <div class="content2 block" id="inicio">
-            <button  class="btnInicio" onclick="jugar()">Iniciar Juego</button><br>
-            <button  class="btnInicio" onclick="addWord()">Agregar Nueva Palabra</button>
+
+        <header>
+            <img class="logo" src="public/images/logo.png">
+        </header>
+        <!-- BOTONERA PRINCIPAL -->
+        <div class="index" id="inicio">
+            <button  class="btnInicio1" onclick="jugar()">Iniciar Juego</button><br>
+            <button  class="btnInicio2" onclick="addWord()">Agregar Nueva Palabra</button>
         </div>
+
         <canvas id="cvDraw" width="200" height="200" style="border: none;">Canvas is not supported</canvas>
         <div class="content" id="juego">
             <div class="flex">

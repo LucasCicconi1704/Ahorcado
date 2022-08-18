@@ -42,6 +42,7 @@ function guarda(p){
     jugar();
 }
 function jugar(){
+
     document.getElementById("tcl").style.display = "visible";
     /* Selecciona una palabra aleatoria del array */
     var rand = Math.floor(Math.random()*arr.length);
