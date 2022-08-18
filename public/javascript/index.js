@@ -8,8 +8,8 @@ var auxLinea;
 /* Canvas Ajuste */
 var canvas = document.getElementById("cvDraw");
         var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#E0DDAA";
-        ctx.strokeStyle = "#E0DDAA";
+        ctx.fillStyle = "#0A3871";
+        ctx.strokeStyle = "#0A3871";
 /*Ocultar sección de juego*/
 window.onload = function() {
     const  ctn = document.getElementById("juego");

@@ -51,7 +51,6 @@
         width: 317px;
         height: 105px;
         margin: 5px;
-        left: 29px;
         color: white;
         font-family: ''Rubik', sans-serif';
         font-size: 20px;
@@ -66,7 +65,6 @@
         width: 278px;
         height: 66px;
         margin: 5px;
-        left: 29px;
         color:#0A3871;
         font-family: ''Rubik', sans-serif';
         font-size: 20px;
@@ -80,7 +78,7 @@
         height: 20px;
         margin: 5px;
         border-bottom: 3px solid var(--dkblue);
-        color: var(--yellow);
+        color: #0A3871;
         font-family: 'Rubik', sans-serif;
         font-size: 20px;
     }
@@ -96,7 +94,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: var(--yellow);
+        background-color: #0A3871;
         border: none;
         border-radius: 10px;
         padding: 20px;
@@ -129,7 +127,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: var(--yellow);
+        background-color: #0A3871;;
         border: none;
         border-radius: 10px;
         padding: 20px;
@@ -156,7 +154,7 @@
         height: 40px;
         margin: 5px;
         border-bottom: 3px solid var(--dkblue);
-        color: var(--yellow);
+        color: #0A3871;
         font-family: 'Rubik', sans-serif;
         font-size: 30px;
     }
@@ -316,12 +314,12 @@ p{
 }
 .toastbtn:hover{
     background-color: var(--dkblue);
-    color: var(--yellow);
+    color: #0A3871;
     cursor: pointer;
 
 }
 .game{
-    color: var(--yellow);
+    color: #0A3871;;
     background: rgb(20,30,39);
     background: linear-gradient(90deg, rgba(20,30,39,1) 0%, rgba(43,68,78,1) 50%, rgba(20,30,39,1) 100%);
     padding: 8px;
