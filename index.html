@@ -19,7 +19,9 @@
             <button  class="btnInicio2" onclick="addWord()">Agregar Nueva Palabra</button>
         </div>
         <!-- JUEGO CANVAS -->
+        <div class="container-canvas">
         <canvas id="cvDraw" width="200" height="200" style="border: none;">Canvas is not supported</canvas>
+        </div>
         <div class="content" id="juego">
             <div class="flex">
                 <div class="boxWords" id="words">
@@ -32,15 +34,15 @@
                 <span class="game" id="pUsadas"></span>
             </div>
             <!-- BOTONERA JUEGO -->
-            <div class="stats1 flex">
-                <div class="">
-                    <button class="reload" onclick="newJuego()">Juego nuevo</button>
+            <div class="btns-juego">
+                <div>
+                    <button class="btn-reload" onclick="newJuego()">Juego nuevo</button>
                 </div>
-                <div class="">
-                    <button class="reload" onclick="window.location.reload()">Desistir</button>
+                <div>
+                    <button class="btn-index" onclick="window.location.reload()">Desistir</button>
                 </div>
-                <div class="datos" id="intent">Intentos: 10</div>
-            </div>
+                <div class="datos" id="intent"></div>
+                </div>
             <div class="teclado" id="tcl">
                 <button onclick="getLetter('A')" class="lett" id="A" >A</button>
                 <button onclick="getLetter('B')" class="lett" id="B" >B</button>

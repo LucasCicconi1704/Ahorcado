@@ -77,31 +77,108 @@
         width: 20px;
         height: 20px;
         margin: 5px;
-        border-bottom: 3px solid var(--dkblue);
+        border-bottom: 3px solid #0A3871;
         color: #0A3871;
         font-family: 'Rubik', sans-serif;
         font-size: 20px;
     }
+
+
+    canvas{
+        position:relative;
+        margin-top: 136px;
+    }
+
+    #cvDraw {
+        margin-top: 136px;
+        width: 69%;
+    }
+
+    .btns-juego{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-reload{
+        background-color: #0A3871;
+        
+        border-radius: 24px;
+        width: 343px;
+        height: 67px;
+        margin: 5px;
+        color: white;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-index{
+        background-color: transparent;
+        border-radius: 24px;
+        width: 343px;
+        height: 67px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+    }
+
+    .teclado{
+        max-width: 400px;
+        width: auto;
+        margin-top: 9px;
+        text-align: center;
+    }
+
+    button.lett{
+        background-color: #0A3871;
+        padding: 5px;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+
+    .datos{
+        color: #0A3871;
+        font-family: 'Rubik', sans-serif;
+        background-color: transparent;
+        padding: 8px;
+        text-align: center;
+        margin: 0 4px;
+        font-size: 14px;
+    }
+
+
+
     #toast-qr{
+        color: #0A3871;
         visibility: hidden;
         text-align: center;
         z-index: 1;
         min-width: 60px;
-        margin: auto;
+        margin: 5px;
         width: 200px;
         height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #0A3871;
+        background-color: transparent;
         border: none;
-        border-radius: 10px;
+        border-radius: 24px;
         padding: 20px;
     
         box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
-        -webkit-box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
-        -moz-box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
     }
 }
 @media  only screen and (min-width: 500px) {
@@ -174,13 +251,7 @@ h6{
     margin: 0;
     font-size: 14px;
 }
-.teclado{
-    max-width: 400px;
-    width: auto;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-}
+
 .content2{
     text-align: center;
 }
@@ -239,39 +310,6 @@ p{
     color: #203239;
     font-family: 'Rubik', sans-serif;
     display: none;
-}
-.datos{
-    color: var(--dkyellow);
-    font-family: 'Rubik', sans-serif;
-    border-radius: 4px;
-    background-color: var(--dkblue);
-    padding: 8px;
-    text-align: center;
-    margin: 0 4px;
-    font-size: 14px;
-}
-.stats1{
-    margin: auto;
-    margin-bottom: 10px;
-    width: fit-content;
-}
-.reload{
-    color: var(--dkyellow);
-    font-family: 'Rubik', sans-serif;
-    border-radius: 4px;
-    background-color: var(--dkblue);
-    padding: 8px;
-    text-align: center;
-    margin: 0 4px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-    height: 100%;
-    transition:  all 0.5s;
-
-}
-.reload:hover{
-    background-color: var(--lgblue);
 }
 
 #toast-qr.show{
@@ -335,19 +373,4 @@ canvas{
         margin: auto;
         display: block;
     
-}
-button.lett{
-    background-color: var(--dkblue);
-    padding: 5px;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    transition: all .3s;
 }
