@@ -175,39 +175,6 @@ body{
         font-size: 14px;
     }
 
-
-
-    #toast-qr::placeholder {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        /* identical to box height, or 48px */
-        /* Dark blue/dark-blue-300 */
-        color: darkblue;
-        opacity: 111%;
-    }
-    .input-txt {
-        
-        color: #0A3871;
-        font-size: 20px;
-        border: none;
-        outline: none;
-        background: #E5E5E5;
-    }
-}
-@media  only screen and (min-width: 500px) {
-
-    .logo{
-
-    }
-
-    .content{
-        margin: auto;
-        padding: 10px;
-        width: 70%;
-    }
     #toast-qr{
         visibility: hidden;
         text-align: center;
@@ -229,6 +196,49 @@ body{
         -webkit-box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
         -moz-box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
     }
+
+    #toast-qr::placeholder {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+        /* Dark blue/dark-blue-300 */
+        color: darkblue;
+        opacity: 111%;
+    }
+    #toast-qr.show{
+        visibility: visible;
+        -webkit-animation: fadein 0.5s;
+        animation: fadein 0.5s;
+    }
+    #toast-qr.hide{
+        visibility: hidden;
+        -webkit-animation: fadeout 0.5s 2.5s;
+        animation: fadeout 0.5s 2.5s;
+    }
+    .input-txt {
+        
+        color: #0A3871;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background: #E5E5E5;
+    }
+}
+@media  only screen and (min-width: 500px) {
+
+    .logo{
+
+    }
+
+    .content{
+        margin: auto;
+        padding: 10px;
+        width: 70%;
+    }
+
     .btnInicio{
         background-color: #0A3871;
         padding: 20px;

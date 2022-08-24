@@ -166,6 +166,8 @@ function getLetter(valor){
             }   
         }
 }
+
+
 function addWord(){
     var btn1 = document.getElementById('inicio').style.display = "none";
     var y = document.getElementById("toast-qr");
