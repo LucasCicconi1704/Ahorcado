@@ -41,7 +41,7 @@
                 <div>
                     <button class="btn-index" onclick="window.location.reload()">Desistir</button>
                 </div>
-                <div class="datos" id="intent"></div>
+                <div class="datos" id="intent"> Intentos:10</div>
                 </div>
             <div class="teclado" id="tcl">
                 <button onclick="getLetter('A')" class="lett" id="A" >A</button>
@@ -74,13 +74,18 @@
             </div>
         </div>
         <div id="toast-qr" class="toast">
-            <p>Introduce la palabra</p>
-            <h6>Max. 8 letras.</h6>
-            <input type="text" id="palabra" onkeyup="upper()" maxlength="8" autocomplete="off" required>
-            <br>
-            <button class="toastbtn" onclick="valida()" class="btnJoin">Guardar y Empezar</button>
-            <button class="toastbtn" onclick="cancelAdd()" class="btnJoin">Cancelar</button>   
+            
+            
+            <input class="input-txt" id="toast-qr" type="text" placeholder="Introduce la palabra" 
+            Introduce la palabra>
+            <div>
+                <h6>Max. 8 letras.</h6>
+                <button class="toastbtn" onclick="valida()" class="btnJoin">Guardar y Empezar</button>
+                <button class="toastbtn" onclick="cancelAdd()" class="btnJoin">Cancelar</button>
+            </div>   
         </div>
+
+
     </body>
     <script src="public/javascript/index.js"></script>
 </html>

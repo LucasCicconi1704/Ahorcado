@@ -9,6 +9,11 @@
     --dkgreen: #005e0d;
     --dkyellow: #c0be92;
 } */
+
+body{
+    margin: 0;
+    background: #E5E5E5;
+}
 @media  only screen and (max-width: 499px) {
 
     header{
@@ -126,6 +131,18 @@
         border: 1px solid #0A3871;
     }
 
+    .game{
+        color: #0A3871;;
+        background: E5E5E5;
+        padding: 8px;
+        display: none;
+    }
+    .msgGame{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
     .teclado{
         max-width: 400px;
         width: auto;
@@ -160,25 +177,24 @@
 
 
 
-    #toast-qr{
+    #toast-qr::placeholder {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+        /* Dark blue/dark-blue-300 */
+        color: darkblue;
+        opacity: 111%;
+    }
+    .input-txt {
+        
         color: #0A3871;
-        visibility: hidden;
-        text-align: center;
-        z-index: 1;
-        min-width: 60px;
-        margin: 5px;
-        width: 200px;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
+        font-size: 20px;
         border: none;
-        border-radius: 24px;
-        padding: 20px;
-    
-        box-shadow: -15px 19px 35px -13px rgba(0,0,0,0.55);
+        outline: none;
+        background: #E5E5E5;
     }
 }
 @media  only screen and (min-width: 500px) {
@@ -242,10 +258,7 @@ a{
     color: var(--dkblue);
 }
 
-body{
-    margin: 0;
-    background: #E5E5E5;;
-}
+
 h6{
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -350,24 +363,8 @@ p{
     transition: all 0.5s;
 
 }
-.toastbtn:hover{
-    background-color: var(--dkblue);
-    color: #0A3871;
-    cursor: pointer;
 
-}
-.game{
-    color: #0A3871;;
-    background: rgb(20,30,39);
-    background: linear-gradient(90deg, rgba(20,30,39,1) 0%, rgba(43,68,78,1) 50%, rgba(20,30,39,1) 100%);
-    padding: 8px;
-    display: none;
-}
-.msgGame{
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
+
 canvas{
         padding: 0;
         margin: auto;
