@@ -173,10 +173,7 @@ function addWord(){
     var y = document.getElementById("toast-qr");
     y.className = "show";
 }
-function cancelAdd(){
-    var y = document.getElementById("toast-qr");
-    y.className = "hide";
-}
+
 function finGame(){
     document.getElementById("lose").style.display = "block";
     document.getElementById("lose2").innerHTML = "La palabra es: "+rValue;

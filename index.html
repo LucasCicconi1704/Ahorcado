@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sprint 2 | Ahorcado</title>
-        <link rel="stylesheet" href="public/css/index.css">
         <meta charset="UTF-8" lang="es">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <link rel="icon" href="fav2.ico?v=2" type="image/x-icon" />
+        <link rel="stylesheet" href="public/css/index.css">
+        <title>Sprint 2 | Ahorcado</title>
     </head>
     <body>
 
         <header>
-            <img class="logo" src="public/images/logo.png">
+            <img class="logo" src="public/img/logo.png">
         </header>
         <!-- BOTONERA PRINCIPAL -->
         <div class="index" id="inicio">
@@ -41,7 +39,7 @@
                 <div>
                     <button class="btn-index" onclick="window.location.reload()">Desistir</button>
                 </div>
-                <div class="datos" id="intent"> Intentos:10</div>
+                <div class="datos" id="intent">Intentos:10</div>
                 </div>
             <div class="teclado" id="tcl">
                 <button onclick="getLetter('A')" class="lett" id="A" >A</button>
@@ -75,16 +73,17 @@
         </div>
 
         <div id="toast-qr" class="toast" >
-            <input  type="text" placeholder="Introduce la palabra" value="">
+            <input type="text" id="palabra" onkeyup="upper()" maxlength="8" autocomplete="off" placeholder="Introduce la palabra" required>
 
             <div class="btns-toast">
-                <h6>Max. 8 letras.</h6>
-                <button class="toastbtn" onclick="valida()" class="btnJoin">Guardar y Empezar</button>
-                <button class="toastbtn" onclick="cancelAdd()" class="btnJoin">Cancelar</button>
+                <p class="alert"><img src="public/img/alerta.png">   Max. 8 letras.</p>
+
+                <button class="toastbtn-save" onclick="valida()">Guardar y Empezar</button>
+                <button class="toastbtn-cancel" onclick="window.location.reload()">Cancelar</button>
             </div>   
         </div>
 
 
     </body>
-    <script src="public/javascript/index.js"></script>
+    <script src="public/js/index.js"></script>
 </html>

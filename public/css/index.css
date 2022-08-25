@@ -16,10 +16,6 @@ body{
     width: 70%;
 }
 
-a{
-    text-decoration: none;
-    color: var(--dkblue);
-}
 
 
 h6{
@@ -30,7 +26,7 @@ h6{
 
 p{
     background-color: transparent;
-    text-align: center;
+    text-align: start;
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -137,11 +133,11 @@ p{
 
     canvas{
         position:relative;
-        margin-top: 136px;
+        margin-top: 33px;
+        margin-left: 60px;
     }
 
     #cvDraw {
-        margin-top: 136px;
         width: 69%;
     }
 
@@ -154,7 +150,7 @@ p{
         background-color: #0A3871;
         
         border-radius: 24px;
-        width: 343px;
+        width: 309px;
         height: 67px;
         margin: 5px;
         color: white;
@@ -167,7 +163,7 @@ p{
     .btn-index{
         background-color: transparent;
         border-radius: 24px;
-        width: 343px;
+        width: 309px;
         height: 67px;
         margin: 5px;
         color:#0A3871;
@@ -212,6 +208,7 @@ p{
     }
 
     .datos{
+        display: none;
         color: #0A3871;
         font-family: 'Rubik', sans-serif;
         background-color: transparent;
@@ -224,16 +221,11 @@ p{
     #toast-qr{
         visibility: hidden;
         text-align: center;
-        z-index: 1;
         min-width: 120px;
         margin: auto;
-        width: 93%;
-        height: 93%;
+        width: 90%;
         position: absolute;
-        top: 20%;
-        background-color: #0A3871;
-        border: none;
-        border-radius: 10px;
+        top: 18%;
         padding: 20px;
     }
 
@@ -244,48 +236,71 @@ p{
         visibility: hidden;
     }
 
-    input{
-        border-radius: 10px;
-        border: none;
-        padding: 8px;
-        text-align: center;
-        background-color: var(--dkyellow);
-        width: 80%;
-        margin: 10px;
-        font-size: 18px;
-        font-family: 'Rubik', sans-serif;   
-    }
-    input:focus, input:active{
-        border: none;
-    }
-
-   /*  .input-txt {
-        
-        color: #0A3871;
-        font-size: 20px;
+    input {
         border: none;
         outline: none;
-        background: #E5E5E5;
+        padding: 8px;
+        background-color: #E5E5E5;
+        color: #0A3871;
+        font-weight: 400;
+        width: 343px;
+        font-size: 32px;
+        font-family: 'Rubik', sans-serif;   
+    }
+
+    input::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        opacity: 99%;
+    }
+   /*  input:focus, input:active{
+        border: none;
     } */
+
+    .alert{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+    }
 
     .btns-toast {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 600px;
+        margin-top: 390px;
     }
 
-    .toastbtn{
+    .toastbtn-save{
+        width: 343px;
+        height: 67px;
         padding: 8px;
         font-size: 15px;
         margin: 5px;
-        border-radius: 10px;
-        border: none;
+        border-radius: 24px;
         color: white;
         font-family: 'Rubik', sans-serif;
         background-color: #0A3871;
-        /* transition: all 0.5s; */
+        border: 1px solid #0A3871;
     }
+
+    .toastbtn-cancel{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Rubik', sans-serif;
+        background-color: transparent;
+        border: 1px solid #0A3871;
+    }    
     
     .block{
         display: block;
@@ -296,4 +311,280 @@ p{
         display: none;
     }
 }
-@media  only screen and (min-width: 500px) {}
+
+@media  only screen and (min-width: 500px) {
+    header{
+        position:relative;
+        width: 375px;
+        height: 96px;
+    }
+
+    .logo{
+    /* Top */
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+    }
+
+    .index{
+        margin-top: 198px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+    }
+
+    .content{
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+        
+    }
+
+    .btnInicio1 {
+        
+       
+        background-color: #0A3871;
+        
+        border-radius: 24px;
+        width: 317px;
+        height: 105px;
+        margin: 5px;
+        color: white;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btnInicio2{
+        
+        background-color: transparent;
+        border-radius: 24px;
+        width: 278px;
+        height: 66px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+        
+    }
+
+    span.line{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        border-bottom: 3px solid #0A3871;
+        color: #0A3871;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+    }
+
+    span{
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--dkblue);
+        font-family: 'Rubik', sans-serif;
+    }
+    span.spaceline{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-bottom: none;
+    }
+    .boxWords{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+
+    canvas{
+        position:relative;
+        margin-top: 33px;
+        margin-left: 60px;
+    }
+
+    #cvDraw {
+        width: 69%;
+    }
+
+    .btns-juego{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-reload{
+        background-color: #0A3871;
+        
+        border-radius: 24px;
+        width: 309px;
+        height: 67px;
+        margin: 5px;
+        color: white;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-index{
+        background-color: transparent;
+        border-radius: 24px;
+        width: 309px;
+        height: 67px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: ''Rubik', sans-serif';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+    }
+
+    .game{
+        color: #0A3871;;
+        background: E5E5E5;
+        padding: 8px;
+        display: none;
+    }
+    .msgGame{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .teclado{
+        max-width: 400px;
+        width: auto;
+        margin-top: 9px;
+        text-align: center;
+    }
+
+    button.lett{
+        background-color: #0A3871;
+        padding: 5px;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+
+    .datos{
+        display: none;
+        color: #0A3871;
+        font-family: 'Rubik', sans-serif;
+        background-color: transparent;
+        padding: 8px;
+        text-align: center;
+        margin: 0 4px;
+        font-size: 14px;
+    }
+
+    #toast-qr{
+        visibility: hidden;
+        text-align: center;
+        min-width: 120px;
+        margin: auto;
+        width: 90%;
+        position: absolute;
+        top: 18%;
+        padding: 20px;
+    }
+
+    #toast-qr.show{
+        visibility: visible;
+    }
+    #toast-qr.hide{
+        visibility: hidden;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        background-color: #E5E5E5;
+        color: #0A3871;
+        font-weight: 400;
+        width: 343px;
+        font-size: 32px;
+        font-family: 'Rubik', sans-serif;   
+    }
+
+    input::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        opacity: 99%;
+    }
+   /*  input:focus, input:active{
+        border: none;
+    } */
+
+    .alert{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+    }
+
+    .btns-toast {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 390px;
+    }
+
+    .toastbtn-save{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .toastbtn-cancel{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Rubik', sans-serif;
+        background-color: transparent;
+        border: 1px solid #0A3871;
+    }    
+    
+    .block{
+        display: block;
+    }
+    #reglas{
+        color: #203239;
+        font-family: 'Rubik', sans-serif;
+        display: none;
+    }
+}
