@@ -136,7 +136,7 @@ p{
     .btn-reload{
         background-color: #0A3871;
         border-radius: 24px;
-        width: 343px;
+        width: 84%;
         height: 67px;
         margin: 5px;
         color: white;
@@ -149,7 +149,7 @@ p{
     .btn-index{
         background-color: transparent;
         border-radius: 24px;
-        width: 343px;
+        width: 501px;
         height: 67px;
         margin: 5px;
         color:#0A3871;
