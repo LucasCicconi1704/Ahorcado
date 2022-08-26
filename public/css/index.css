@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-
 body{
     margin: 0;
     background: #E5E5E5;
@@ -19,7 +16,7 @@ body{
 p{
     background-color: transparent;
     text-align: start;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter';
     font-size: 24px;
     font-weight: bold;
     margin: 0%;
@@ -64,7 +61,7 @@ p{
         height: 105px;
         margin: 5px;
         color: white;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: none;
@@ -77,7 +74,7 @@ p{
         height: 66px;
         margin: 5px;
         color:#0A3871;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #0A3871;
@@ -89,7 +86,7 @@ p{
         margin: 5px;
         border-bottom: 3px solid #0A3871;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         font-size: 20px;
     }
 
@@ -100,7 +97,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         color: var(--dkblue);
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
     }
     span.spaceline{
         width: 40px;
@@ -138,7 +135,7 @@ p{
         height: 67px;
         margin: 5px;
         color: white;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: none;
@@ -151,7 +148,7 @@ p{
         height: 67px;
         margin: 5px;
         color:#0A3871;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #0A3871;
@@ -184,7 +181,7 @@ p{
         height: 30px;
         margin: 3px;
         color: white;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         font-size: 15px;
         font-weight: bold;
         cursor: pointer;
@@ -194,7 +191,7 @@ p{
     .datos{
         display: none;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: transparent;
         padding: 8px;
         text-align: center;
@@ -229,7 +226,7 @@ p{
         font-weight: 400;
         width: 343px;
         font-size: 32px;
-        font-family: 'Rubik', sans-serif;   
+        font-family: 'Inter';   
     }
 
     input::placeholder {
@@ -267,7 +264,7 @@ p{
         margin: 5px;
         border-radius: 24px;
         color: white;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: #0A3871;
         border: 1px solid #0A3871;
     }
@@ -281,7 +278,7 @@ p{
         border-radius: 24px;
         border: none;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: transparent;
         border: 1px solid #0A3871;
     }    
@@ -291,7 +288,7 @@ p{
     }
     #reglas{
         color: #203239;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         display: none;
     }
 }
@@ -338,7 +335,7 @@ p{
         height: 105px;
         margin: 5px;
         color: white;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: none;
@@ -352,7 +349,7 @@ p{
         height: 66px;
         margin: 5px;
         color:#0A3871;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #0A3871;
@@ -365,7 +362,7 @@ p{
         margin: 5px;
         border-bottom: 3px solid #0A3871;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         font-size: 20px;
     }
 
@@ -376,7 +373,7 @@ p{
         margin-left: auto;
         margin-right: auto;
         color: var(--dkblue);
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
     }
     span.spaceline{
         width: 40px;
@@ -415,7 +412,7 @@ p{
         height: 67px;
         margin: 5px;
         color: white;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: none;
@@ -428,7 +425,7 @@ p{
         height: 67px;
         margin: 5px;
         color:#0A3871;
-        font-family: ''Rubik', sans-serif';
+        font-family: 'Inter';
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #0A3871;
@@ -461,7 +458,7 @@ p{
         height: 30px;
         margin: 3px;
         color: white;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         font-size: 15px;
         font-weight: bold;
         cursor: pointer;
@@ -471,7 +468,7 @@ p{
     .datos{
         display: none;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: transparent;
         padding: 8px;
         text-align: center;
@@ -506,7 +503,7 @@ p{
         font-weight: 400;
         width: 343px;
         font-size: 32px;
-        font-family: 'Rubik', sans-serif;   
+        font-family: 'Inter';   
     }
 
     input::placeholder {
@@ -544,7 +541,7 @@ p{
         margin: 5px;
         border-radius: 24px;
         color: white;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: #0A3871;
         border: 1px solid #0A3871;
     }
@@ -558,7 +555,7 @@ p{
         border-radius: 24px;
         border: none;
         color: #0A3871;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         background-color: transparent;
         border: 1px solid #0A3871;
     }    
@@ -568,7 +565,82 @@ p{
     }
     #reglas{
         color: #203239;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter';
         display: none;
     }
 }
+
+
+@media  only screen and (min-width: 500px) {
+
+    header{
+        position:relative;
+        width: 96%;
+        height: 96px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 84px;
+        top: 40px;
+    }
+
+    input {
+        margin-right: 765px;
+        margin-left: 376px;
+    }
+
+    .btns-toast {
+        display: inherit;
+        margin-top: 390px;
+    }
+
+    .alert {
+        margin-left: 376px;
+        line-height: 150%;
+      }
+
+      #cvDraw {
+        width: 25%;
+        margin-left: 39%;
+        margin-bottom: 120px;
+      }
+
+      span.line{
+        width: 81px;
+        height: 60px;
+        margin: 5px;
+        border-bottom: 3px solid #0A3871;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-size: 48px;
+    }
+
+    .game {
+        color: #0A3871;
+        background: #E5E5E5;
+        padding: 30px;
+        display: none;
+      }
+
+    .msgGame {
+        padding: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: -3%;
+        margin-bottom: 9%;
+      }
+
+      .btns-juego {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: center;
+        margin-top: -3%;
+      }
+
+      .teclado {
+        display: none;
+      }
+
+}        
