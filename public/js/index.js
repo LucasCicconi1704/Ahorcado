@@ -42,8 +42,9 @@ function guarda(p){
     jugar();
 }
 function jugar(){
-
+    
     document.getElementById("tcl").style.display = "visible";
+    
     /* Selecciona una palabra aleatoria del array */
     var rand = Math.floor(Math.random()*arr.length);
     rValue = arr[rand];
@@ -52,6 +53,9 @@ function jugar(){
     /*mostrar juego*/
     var ctn = document.getElementById("juego");
     ctn.style.display = "block"
+    var ctn2 = document.getElementById("canvas-content");
+    ctn2.style.display = "flex"
+    
     /* Vuelve visible el juego y oculta los botones de inicio */
     var btn1 = document.getElementById('inicio').style.display = "none";
     /* Guarda cada letra en un espacio del array */

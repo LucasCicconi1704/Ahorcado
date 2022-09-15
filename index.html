@@ -18,7 +18,7 @@
             <button  class="btnInicio2" onclick="addWord()">Agregar Nueva Palabra</button>
         </div>
         <!-- JUEGO CANVAS -->
-        <div class="container-canvas">
+        <div id="canvas-content" class="container-canvas">
         <canvas id="cvDraw" width="200" height="200" style="border: none;">Canvas is not supported</canvas>
         </div>
         <div class="content" id="juego">
@@ -75,9 +75,11 @@
 
         <div id="toast-qr" class="toast" >
             <input type="text" id="palabra" onkeyup="upper()" maxlength="8" autocomplete="off" placeholder="Introduce la palabra" required>
-
+           
+            <div class="alert-div">
+            <p class="alert"><img src="public/img/alerta.png">   Max. 8 letras.</p>
+            </div>
             <div class="btns-toast">
-                <p class="alert"><img src="public/img/alerta.png">   Max. 8 letras.</p>
 
                 <button class="toastbtn-save" onclick="valida()">Guardar y Empezar</button>
                 <button class="toastbtn-cancel" onclick="window.location.reload()">Cancelar</button>

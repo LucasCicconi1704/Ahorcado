@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    margin: 0; 
+    padding: 0;
     background: #E5E5E5;
 }
 
@@ -27,7 +28,7 @@ p{
 
     header{
         position:relative;
-        width: 375px;
+        width: 100%;
         height: 96px;
     }
 
@@ -116,11 +117,17 @@ p{
     canvas{
         position:relative;
         margin-top: 33px;
-        margin-left: 60px;
+        margin-bottom: 9px;
     }
 
-    #cvDraw {
-        width: 69%;
+    .container-canvas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+     #cvDraw {
+        width: 276px;
     }
 
     .btns-juego{
@@ -237,9 +244,6 @@ p{
         color: #0A3871;
         opacity: 99%;
     }
-   /*  input:focus, input:active{
-        border: none;
-    } */
 
     .alert{
         font-weight: 400;
@@ -249,11 +253,15 @@ p{
         opacity: 0.8;
     }
 
+    .alert-div{
+        margin-top: 333px;  
+    }
+
     .btns-toast {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 390px;
+        margin-top: 3px;
     }
 
     .toastbtn-save{
@@ -296,7 +304,7 @@ p{
 @media  only screen and (min-width: 500px) {
     header{
         position:relative;
-        width: 375px;
+        width: 100%;
         height: 96px;
     }
 
@@ -321,15 +329,18 @@ p{
     .content{
         margin: auto;
         padding: 10px;
-        width: 90%;
-        
+    }
+
+    #canvas-content{
+        display: none;
+    }
+
+    #cvDraw{
+        width: 276px;
     }
 
     .btnInicio1 {
-        
-       
         background-color: #0A3871;
-        
         border-radius: 24px;
         width: 317px;
         height: 105px;
@@ -342,7 +353,6 @@ p{
     }
 
     .btnInicio2{
-        
         background-color: transparent;
         border-radius: 24px;
         width: 278px;
@@ -353,132 +363,11 @@ p{
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #0A3871;
-        
-    }
-
-    span.line{
-        width: 20px;
-        height: 20px;
-        margin: 5px;
-        border-bottom: 3px solid #0A3871;
-        color: #0A3871;
-        font-family: 'Inter';
-        font-size: 20px;
-    }
-
-    span{
-        width: auto;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color: var(--dkblue);
-        font-family: 'Inter';
-    }
-    span.spaceline{
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-        border-bottom: none;
-    }
-    .boxWords{
-        text-align: center;
-        margin: auto;
-        padding-bottom: 20px;
-        display: flex;
-    }
-
-
-    canvas{
-        position:relative;
-        margin-top: 33px;
-        margin-left: 60px;
-    }
-
-    #cvDraw {
-        width: 69%;
-    }
-
-    .btns-juego{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn-reload{
-        background-color: #0A3871;
-        
-        border-radius: 24px;
-        width: 309px;
-        height: 67px;
-        margin: 5px;
-        color: white;
-        font-family: 'Inter';
-        font-size: 20px;
-        cursor: pointer;
-        border: none;
-    }
-
-    .btn-index{
-        background-color: transparent;
-        border-radius: 24px;
-        width: 309px;
-        height: 67px;
-        margin: 5px;
-        color:#0A3871;
-        font-family: 'Inter';
-        font-size: 20px;
-        cursor: pointer;
-        border: 1px solid #0A3871;
-    }
-
-    .game{
-        color: #0A3871;;
-        background: E5E5E5;
-        padding: 8px;
-        display: none;
-    }
-    .msgGame{
-        margin: auto;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .teclado{
-        max-width: 400px;
-        width: auto;
-        margin-top: 9px;
-        text-align: center;
-    }
-
-    button.lett{
-        background-color: #0A3871;
-        padding: 5px;
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        margin: 3px;
-        color: white;
-        font-family: 'Inter';
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        border: none;
-    }
-
-    .datos{
-        display: none;
-        color: #0A3871;
-        font-family: 'Inter';
-        background-color: transparent;
-        padding: 8px;
-        text-align: center;
-        margin: 0 4px;
-        font-size: 14px;
     }
 
     #toast-qr{
         visibility: hidden;
-        text-align: center;
+        text-align: flex-start;
         min-width: 120px;
         margin: auto;
         width: 90%;
@@ -497,13 +386,14 @@ p{
     input {
         border: none;
         outline: none;
-        padding: 8px;
+        padding: 9px;
         background-color: #E5E5E5;
         color: #0A3871;
         font-weight: 400;
         width: 343px;
         font-size: 32px;
-        font-family: 'Inter';   
+        font-family: 'Inter'; 
+        margin-left: 120px;  
     }
 
     input::placeholder {
@@ -514,9 +404,11 @@ p{
         color: #0A3871;
         opacity: 99%;
     }
-   /*  input:focus, input:active{
-        border: none;
-    } */
+
+    .alert-div{
+        margin-top: 291px;
+        margin-left: 60px;
+    }
 
     .alert{
         font-weight: 400;
@@ -526,11 +418,13 @@ p{
         opacity: 0.8;
     }
 
+
     .btns-toast {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 390px;
+        justify-content: flex-start;
+        flex-direction: inherit;
+        margin-top: 3px;
+        margin-left: 60px;
     }
 
     .toastbtn-save{
@@ -558,89 +452,105 @@ p{
         font-family: 'Inter';
         background-color: transparent;
         border: 1px solid #0A3871;
-    }    
+    }
     
-    .block{
-        display: block;
+    .container-canvas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    #reglas{
-        color: #203239;
-        font-family: 'Inter';
+    .canvas{
+        margin-bottom: 9px;
+    }
+
+    .teclado{
         display: none;
     }
-}
-
-
-@media  only screen and (min-width: 500px) {
-
-    header{
-        position:relative;
-        width: 96%;
-        height: 96px;
-    }
-
-    .logo {
-        position: absolute;
-        left: 84px;
-        top: 40px;
-    }
-
-    input {
-        margin-right: 765px;
-        margin-left: 376px;
-    }
-
-    .btns-toast {
-        display: inherit;
-        margin-top: 390px;
-    }
-
-    .alert {
-        margin-left: 376px;
-        line-height: 150%;
-      }
-
-      #cvDraw {
-        width: 25%;
-        margin-left: 39%;
-        margin-bottom: 120px;
-      }
-
-      span.line{
-        width: 81px;
-        height: 60px;
-        margin: 5px;
-        border-bottom: 3px solid #0A3871;
-        color: #0A3871;
-        font-family: 'Inter';
-        font-size: 48px;
-    }
-
-    .game {
-        color: #0A3871;
-        background: #E5E5E5;
-        padding: 30px;
-        display: none;
-      }
-
-    .msgGame {
-        padding: 20px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 24px;
-        margin-top: -3%;
-        margin-bottom: 9%;
-      }
-
-      .btns-juego {
+    .btns-juego{
         display: flex;
         flex-direction: inherit;
-        justify-content: center;
-        margin-top: -3%;
-      }
+        justify-content: space-around;
+    }
+    .btn-reload{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        color: white;
+        font-family: 'Inter';
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+    }
 
-      .teclado {
+    .btn-index{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        border: 1px solid #0A3871;
+
+    }
+    .datos {
         display: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        padding: 8px;
+        text-align: center;
+        margin: 0 4px;
+        font-size: 14px;
       }
 
-}        
+      .boxWords{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+        display: flex;
+    }
+    span.line{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        border-bottom: 3px solid #0A3871;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+    }
+
+    span{
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--dkblue);
+        font-family: 'Inter';
+    }
+    span.spaceline{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-bottom: none;
+    }
+
+    .game{
+        color: #0A3871;;
+        background: E5E5E5;
+        padding: 8px;
+        display: none;
+    }
+    .msgGame{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
